@@ -1,0 +1,64 @@
+.info
+	&-icon
+		sprite $info
+	&-fields
+		width 520px
+		margin 0 auto 45px
+		@media(max-width 560px)
+			width 100%
+		&__field
+			margin-bottom 25px
+
+.dropdown
+	width 320px
+	margin 0 auto 25px
+	position relative
+	@media(max-width 400px)
+		width 100%
+	&__select
+		width 100%
+		height 60px
+		border 1px solid #e5e5e5
+		border-radius 4px
+		font-size 24px
+		font-weight normal
+		color #c8c8c8
+		line-height 60px
+		position relative
+		user-select none
+		cursor pointer
+		&:after
+			content ''
+			position absolute
+			top 25px
+			right 19px
+			width 14px
+			height 8px
+			sprite $drop_down
+			pointer-events none
+		&_choosen
+			color blackColor
+	&-menu
+		&-wrapper
+			background #ffffff
+			position absolute
+			z-index 5
+			width 100%
+			text-align center
+			box-shadow 0 3px 10px rgba(0, 0, 0, .2)
+			border-radius 4px
+			padding 20px 0
+			display none
+		max-height 300px
+		overflow auto
+		&__item
+			color blueColor
+			padding 10px 0
+			cursor pointer
+			font-size 20px
+			user-select none
+			&:hover
+				color blackColor
+	&_active
+		.dropdown-menu-wrapper
+			display block

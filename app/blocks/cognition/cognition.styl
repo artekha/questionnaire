@@ -1,0 +1,112 @@
+.cognition
+	&-icon
+		sprite $js
+
+.section-head
+	.cognition__headline
+		margin-bottom 20px
+
+.cognition-lane
+	text-align left
+	margin-bottom 75px
+	&__progress
+		position relative
+		cursor pointer
+		height 15px
+		width 100%
+		background #e8e8e8
+		@media(max-width 840px)
+			display none
+		&:before
+			position absolute
+			content ''
+			width 101%
+			height 14px
+			left -0.5%
+			top -8px
+			transform skew(0deg,-0.7deg)
+			background #ffffff
+			pointer-events none
+	&__phantom
+		height 15px
+		width 0
+		background linear-gradient(to right, #ccb1f1, #8885c2)
+		&_animate
+			transition width .3s
+	&__pointer
+		position absolute
+		size(22px, 25px)
+		sprite $pointer
+		cursor pointer
+		bottom -31px
+		left -10px
+		&_animate
+			transition left .3s
+	&__list
+		display flex
+		width 769px
+		align-items flex-end
+		margin-bottom 13px
+		@media(max-width 840px)
+			display block
+			margin 0 auto 13px
+			width 320px
+		@media(max-width 400px)
+			width 100%
+			padding 0 20px
+	&__item
+		position relative
+		flex .4
+		z-index 5
+		&:before
+			content ''
+			bottom -3px
+			transform translateY(100%)
+			@media(max-width 840px)
+				display none
+	&__item:nth-child(1):before
+		position absolute
+		left 0
+		sprite $anchor_1
+	&__item:nth-child(2):before
+		position absolute
+		left 0
+		sprite $anchor_2
+	&__item:nth-child(3):before
+		position absolute
+		left 0
+		sprite $anchor_3
+	&__item:nth-child(4)
+		text-align right
+		@media(max-width 840px)
+			text-align left
+		&:before
+			position absolute
+			right 1px
+			sprite $anchor_4
+	&__anchor
+		display block
+		text-decoration none
+		color #443b38
+		font-size 13px
+		margin-top 26px
+		line-height 19px
+		user-select none
+		@media(max-width 840px)
+			position relative
+			margin-top 0
+			padding 10px 0px 10px 31px
+			line-height 24px
+			user-select none
+			font-size 16px
+			&:before
+				position absolute
+				content ''
+				top 50%
+				left -2px
+				transform translateY(-50%)
+				size(20px)
+				background url('../images/sprites/checkbox.png')
+			&_active
+				&:before
+					background-position -20px 0

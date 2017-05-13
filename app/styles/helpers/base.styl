@@ -1,0 +1,95 @@
+::selection
+  background-color blueColor
+  color #ffffff
+
+.field
+  width 100%
+  height 60px
+  position relative
+  &__input
+    width 100%
+    height 100%
+    border 1px solid #e5e5e5
+    border-radius 4px
+    font-weight normal
+    font-size 20px
+    color black
+    padding 15px 20px 0
+    text-align center
+    transition border-color .2s
+    &:focus
+      border-color blueColor
+      &+.field__label
+        font-size 14px
+        top 7px
+  &__label
+    display block
+    width 100%
+    font-size 24px
+    font-weight normal
+    color #c8c8c8
+    position absolute
+    top 18px
+    left 50%
+    transform translateX(-50%)
+    pointer-events none
+    user-select none
+    transition top .2s, font-size .2s
+    &_active
+      font-size 14px
+      top 7px
+
+.textarea
+  padding 18px 20px
+  border 1px solid #e7e7e7
+  color blackColor
+  border-radius 4px
+  line-height 25px
+  font-weight normal
+  font-size 20px
+  transition border-color .2s
+  &:focus
+    border-color blueColor
+  &::-webkit-input-placeholder
+    color #c8c8c8
+  &::-moz-placeholder
+    color #c8c8c8
+  &:-ms-input-placeholder
+    color #c8c8c8
+  &:-moz-placeholder
+    color #c8c8c8
+
+.checkbox
+  &__label
+    position relative
+    padding-left 31px
+    line-height 24px
+    cursor pointer
+    user-select none
+    font-size 16px
+    display inline-block
+    &:before
+      position absolute
+      content ''
+      top 0px
+      left -2px
+      size(20px)
+      background url('../images/sprites/checkbox.png')
+  &__input
+    display none
+  &__input:checked + &__label:before
+    background-position -20px 0
+
+.button
+  width 115px
+  height 50px
+  border-radius 8px
+  border none
+  background #435993
+  color #ffffff
+  font-size 16px
+  display block
+  &:hover
+    background #49609e
+  &:active
+    background #334575
