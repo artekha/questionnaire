@@ -9,14 +9,14 @@ mixin checkbox(name, val)
 .section-body
 	.experience-list
 		.experience-list__section
-			+checkbox('methodology', 'БЭМ/OOCSS')
-			+checkbox('preprocessor', 'Stylus/LESS/SASS')
+			+checkbox('methodology', 'БЭМ/OOCSS')(checked)
+			+checkbox('preprocessor', 'Stylus/LESS/SASS')(checked)
 			+checkbox('svg', 'Работаю с SVG')
 		.experience-list__section
 			+checkbox('semantic', 'Верстаю семантично')
-			+checkbox('esnext', 'ES2015/ES2016')
-			+checkbox('bundler', 'Gulp/GRUNT')
+			+checkbox('esnext', 'ES2015/ES2016')(checked)
+			+checkbox('bundler', 'Gulp/GRUNT')(checked)
 		.experience-list__section
-			+checkbox('webpack', 'Webpack')
-			+checkbox('jq', 'jQuery')
-			+checkbox('git', 'Ипользую Git')
+			+checkbox('webpack', 'Webpack')(checked)
+			+checkbox('jq', 'jQuery')(checked)
+			+checkbox('git', 'Ипользую Git')(checked)

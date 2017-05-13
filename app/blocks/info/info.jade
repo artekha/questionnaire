@@ -4,22 +4,22 @@
 .section-body
 	.info-fields
 		.field.info-fields__field
-			input(type="text" name="full_name" autocomplete="off").field__input
+			input(type="text" name="full_name" autocomplete="off" value="Артеха Андрей Вадимович").field__input
 			span.field__label ФИО
 		.dropdown
 			input(type="hidden" name="birth_year").dropdown__hidden-input
-			.dropdown__select Год рождения
+			.dropdown__select.dropdown__select_choosen 1997
 			.dropdown-menu-wrapper
 				ul.dropdown-menu
 					- var year = 2007;
 					while year >= 1930
 						li.dropdown-menu__item= year--
 		.field.info-fields__field
-			input(type="text" name="location" autocomplete="off").field__input
+			input(type="text" name="location" autocomplete="off" value="г. Киев").field__input
 			span.field__label Место проживания
 		.field.info-fields__field
-			input(type="text" name="skype" autocomplete="off").field__input
+			input(type="text" name="skype" autocomplete="off" value="andrey.artekha").field__input
 			span.field__label Skype
 		.field.info-fields__field
-			input(type="email" name="email" autocomplete="off").field__input
+			input(type="email" name="email" autocomplete="off" value="andrewartekha@gmail.com").field__input
 			span.field__label E-mail
