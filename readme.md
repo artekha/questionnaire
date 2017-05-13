@@ -1,12 +1,10 @@
-# CSSSR Project Template
-**Шаблон проекта для быстрого старта**
-
+# Frontend test task
 
 ## Старт проекта
 
 ### Склонируй репозиторий и перейди в папку проекта
 ```
-git clone git@github.com:CSSSR/csssr-project-template.git new-project && cd new-project
+git clone https://github.com/artekha/questionnaire new-project && cd new-project
 ```
 
 ### Установи модули
@@ -231,5 +229,3 @@ npm run deploy
     height: 24px;
 }
 ```
-
-## [Внеси свой вклад в развитие проекта!](https://github.com/CSSSR/csssr-project-template/blob/master/contributing.md)
